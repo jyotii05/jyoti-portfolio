@@ -12,7 +12,7 @@ export default function Projects() {
         <div className="projects">
           {projects.map((p, i) => (
             <article
-              className={`project glass spot reveal ${i === 0 ? 'project--wide' : ''}`}
+              className={`project glass spot reveal ${i === 0 ? 'project--wide' : ''} ${p.live || p.github ? 'project--linked' : ''}`}
               key={p.title}
               onPointerMove={spotlight}
             >
@@ -25,7 +25,16 @@ export default function Projects() {
                 </ul>
               </div>
 
-              <h3 className="project__title">{p.title}</h3>
+              <h3 className="project__title">
+                {p.live || p.github ? (
+                  // Stretched link: makes the whole card clickable
+                  <a href={p.live || p.github} target="_blank" rel="noopener noreferrer" className="project__stretch">
+                    {p.title}
+                  </a>
+                ) : (
+                  p.title
+                )}
+              </h3>
               <p className="project__desc">{p.description}</p>
 
               <ul className="project__highlights" aria-label="Highlights">

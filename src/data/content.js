@@ -7,7 +7,8 @@ export const profile = {
   role: 'Software Developer',
   email: 'jyotijadhav0192@gmail.com',
   github: 'https://github.com/jyotii05',
-  linkedin: 'https://linkedin.com/in/jyoti-jadhav-7b12172',
+  linkedin: 'https://www.linkedin.com/in/jyotii-jadhav',
+  instagram: 'https://www.instagram.com/_jyotiijadhav/',
   photo: '/images/profile.jpg',
   resume: '/resume/Jyoti-Jadhav-Resume.pdf',
 }
@@ -28,15 +29,15 @@ export const about = {
     'I enjoy building practical digital solutions and working across both technical and creative areas, from production code and database-backed applications to interface design and video.',
   ],
   facts: [
-    { label: 'Currently', value: 'Software Developer Intern + Video Editor, SNSS Global Services' },
+    { label: 'Currently', value: 'Software Developer Intern, SNSS Global Services' },
     { label: 'Degree', value: 'B.Sc. Information Technology, Mumbai University' },
-    { label: 'Focus', value: 'Python · Web · Machine Learning · UI/UX' },
+    { label: 'Focus', value: 'Python, SQL & analytical thinking' },
   ],
   timeline: [
     { year: '2023', title: 'B.Sc. Information Technology begins', place: 'Thakur College of Science and Commerce' },
     { year: '2025', title: 'UI/UX Developer Internship', place: 'Aurify' },
     { year: '2026', title: 'B.Sc. Information Technology completed', place: 'Mumbai University' },
-    { year: '2026', title: 'Software Developer Intern + Video Editor', place: 'SNSS Global Services' },
+    { year: '2026', title: 'Software Developer Intern', place: 'SNSS Global Services' },
   ],
 }
 
@@ -129,7 +130,7 @@ export const projects = [
       'Real-time web interface',
     ],
     github: null,
-    live: null,
+    live: 'https://fake-news-green.vercel.app',
   },
   {
     title: 'AI Weapons Detection System',
@@ -191,7 +192,7 @@ export const projects = [
       'Production deployment',
     ],
     github: null,
-    live: null,
+    live: 'https://snss-new-website.vercel.app',
   },
 ]
 
@@ -228,5 +229,5 @@ export const beyondCode = [
   { title: 'Performance', icon: 'dance', items: ['Dance', 'Fashion shows'] },
   { title: 'Sport', icon: 'ball', items: ['Volleyball', 'Cricket'] },
   { title: 'Leadership', icon: 'people', items: ['Event coordination', 'Public relations'] },
-  { title: 'Creative', icon: 'camera', items: ['Photography', 'Videography', 'Creative content'] },
+  { title: 'Creative', icon: 'camera', items: ['Content creation', 'Photography', 'Videography'] },
 ]

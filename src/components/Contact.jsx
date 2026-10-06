@@ -53,6 +53,11 @@ export default function Contact() {
             <span>GitHub</span>
             <Icon name="arrowUpRight" size={16} className="contact-link__arrow" />
           </a>
+          <a href={profile.instagram} target="_blank" rel="noopener noreferrer" className="contact-link">
+            <Icon name="instagram" size={19} />
+            <span>Instagram</span>
+            <Icon name="arrowUpRight" size={16} className="contact-link__arrow" />
+          </a>
         </div>
       </div>
     </section>

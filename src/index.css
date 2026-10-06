@@ -333,12 +333,12 @@ button {
    ============================================================ */
 .section {
   position: relative;
-  padding: clamp(88px, 12vw, 150px) 0;
+  padding: clamp(48px, 6vw, 80px) 0;
 }
 
 .section-header {
   position: relative;
-  margin-bottom: clamp(40px, 6vw, 64px);
+  margin-bottom: clamp(28px, 4vw, 44px);
 }
 .section-header__action {
   margin-top: 24px;
@@ -884,7 +884,7 @@ button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
-  margin-top: clamp(64px, 9vw, 110px);
+  margin-top: clamp(44px, 6vw, 72px);
   padding-top: 36px;
 }
 .timeline::before {
@@ -1279,10 +1279,30 @@ button {
   gap: 10px;
   margin-top: 28px;
 }
+.project--linked {
+  cursor: pointer;
+}
+.project__stretch::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.project__stretch:focus-visible {
+  outline: none;
+}
+.project:has(.project__stretch:focus-visible) {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.project__links {
+  position: relative;
+  z-index: 2;
+}
 .projects__more {
   display: flex;
   justify-content: center;
-  margin-top: 48px;
+  margin-top: 36px;
 }
 
 @media (max-width: 800px) {
@@ -1368,7 +1388,7 @@ button {
 }
 
 .certs {
-  margin-top: clamp(64px, 8vw, 96px);
+  margin-top: clamp(44px, 6vw, 64px);
   scroll-margin-top: calc(var(--nav-h) + 24px);
 }
 .certs__grid {
@@ -1472,7 +1492,7 @@ button {
    Contact
    ============================================================ */
 .contact {
-  padding-bottom: clamp(100px, 12vw, 160px);
+  padding-bottom: clamp(64px, 8vw, 100px);
 }
 .contact__inner {
   display: flex;
@@ -1548,7 +1568,7 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
-  margin-top: 56px;
+  margin-top: 40px;
 }
 .contact-link {
   display: inline-flex;
