@@ -59,6 +59,7 @@ export default function Starfield() {
       const cx = w / 2
       const cy = h / 2
 
+      const light = document.documentElement.dataset.theme === 'light'
       for (const s of stars) {
         if (!reduceMotion) {
           if (warping) {
@@ -85,7 +86,9 @@ export default function Starfield() {
         let py = s.y + mouse.y * s.depth * 14 - scrollShift * s.depth
         py = ((py % h) + h) % h
         const a = s.alpha * (0.65 + 0.35 * Math.sin(s.tw))
-        const color = s.tint ? `rgba(160,172,255,${a})` : `rgba(235,238,250,${a})`
+        const color = light
+          ? s.tint ? `rgba(90,104,220,${a})` : `rgba(40,44,70,${a * 0.7})`
+          : s.tint ? `rgba(160,172,255,${a})` : `rgba(235,238,250,${a})`
 
         if (warping) {
           const dx = s.x - cx

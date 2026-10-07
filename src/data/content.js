@@ -68,7 +68,7 @@ export const skillGroups = [
 
 export const experience = [
   {
-    role: 'Software Developer Intern + Video Editor',
+    role: 'Software Developer Intern',
     company: 'SNSS Global Services Pvt. Ltd.',
     period: 'June 2026 – Present',
     current: true,
@@ -203,7 +203,7 @@ export const education = [
     board: 'Mumbai University',
     period: 'June 2023 – March 2026',
     scoreLabel: 'Average CGPA',
-    score: '6.6 / 10',
+    score: '7 / 10',
   },
   {
     title: 'Higher Secondary Certificate (HSC)',
