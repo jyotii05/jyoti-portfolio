@@ -161,7 +161,7 @@ export const projects = [
       'Team-based development',
     ],
     github: null,
-    live: null,
+    live: 'https://student-attendence-management-sys.vercel.app',
   },
   {
     title: 'Hospital Management System',
@@ -176,7 +176,7 @@ export const projects = [
       'Structured user interface',
     ],
     github: null,
-    live: null,
+    live: 'https://hospital-manage-sys.vercel.app',
   },
   {
     title: 'SNSS Company Website Redesign',
